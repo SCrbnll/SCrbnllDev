@@ -49,8 +49,8 @@ function NavBar() {
 
             <div className="collapse navbar-collapse" id="navbarNav">
                 <div className={`d-flex ${windowWidth < 768 ? 'flex-column align-items-end' : 'flex-md-row ms-auto'}`}> 
-                    <a className="nav-link text-white my-2 me-4" href="#top">Experiencia</a>
                     <a className="nav-link text-white my-2 me-4" href="#projects">Proyectos</a>
+                    <a className="nav-link text-white my-2 me-4" href="#experience">Experiencia</a>
                     <a className="nav-link text-white my-2 me-4" href="#contact">Contacto</a>
 
                     <div className="my-2 me-4" style={withinStyle}>

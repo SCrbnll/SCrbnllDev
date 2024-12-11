@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import mySelf from '/images/myself.jpg';
-import "@theme-toggles/react/css/Within.css";
 
 function AboutMe() {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
