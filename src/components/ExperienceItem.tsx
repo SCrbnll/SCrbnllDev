@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface ExperienceItemProps {
   job: string;
