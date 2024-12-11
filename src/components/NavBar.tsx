@@ -21,8 +21,12 @@ function NavBar() {
     };
 
     return (
-        <nav className="navbar navbar-expand-md bg-dark px-1 px-md-5">
-            <a className="navbar-brand" href="#top">
+        <nav className="navbar navbar-expand-md fixed-top border-bottom px-3 px-md-5" style={{
+            backgroundColor: 'rgba(0, 0, 0, 0.9)', 
+            backdropFilter: 'blur(20px)', 
+            WebkitBackdropFilter: 'blur(20px)',
+        }}>
+            <a className="navbar-brand" href="#">
                 <img src={logo} alt="Logo" style={logoStyle} />
             </a>
 
@@ -52,7 +56,7 @@ function NavBar() {
                     <div className="my-2 me-4" style={withinStyle}>
                         <Within
                             color="white"
-                            duration={800}
+                            duration={1500}
                             placeholder={undefined}
                             onPointerEnterCapture={undefined}
                             onPointerLeaveCapture={undefined}
