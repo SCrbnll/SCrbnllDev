@@ -5,7 +5,7 @@ const Skills: React.FC = () => {
   return (
     <div className="container text-white py-5" id="skills">
       <h2 className="mx-3 mx-md-0 my-5">Skills</h2>
-      <div className="row">
+      <div className="row mx-3 mx-md-0">
         {skillsData.map((category, index) => (
           <div key={index} className="col-12 col-md-4 mb-5">
             <h4>{category.category}</h4>
@@ -40,7 +40,7 @@ const Skills: React.FC = () => {
           border-radius: 5px;
           padding: 5px;
           position: absolute;
-          top: 100%;
+          top: 120%;
           left: 50%;
           margin-left: -60px;
           z-index: 1;

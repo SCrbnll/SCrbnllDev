@@ -4,13 +4,21 @@ import "@theme-toggles/react/css/Within.css";
 import { Within } from "@theme-toggles/react";
 
 function NavBar() {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [windowWidth] = useState(window.innerWidth);
+    const [theme, setTheme] = useState('dark'); 
 
     useEffect(() => {
-        const handleResize = () => setWindowWidth(window.innerWidth);
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
+        if (document.startViewTransition) {
+            document.startViewTransition(() => switchTheme());
+        } else {
+            switchTheme(); 
+        }
+    }, [theme]);
+
+    const switchTheme = () => {
+        document.body.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme); 
+    };
 
     const logoStyle = {
         height: windowWidth >= 768 ? '50px' : '30px',
@@ -21,11 +29,7 @@ function NavBar() {
     };
 
     return (
-        <nav className="navbar navbar-expand-md fixed-top border-bottom px-3 px-md-5" style={{
-            backgroundColor: 'rgba(0, 0, 0, 0.9)', 
-            backdropFilter: 'blur(20px)', 
-            WebkitBackdropFilter: 'blur(20px)',
-        }}>
+        <nav className="navbar navbar-expand-md fixed-top border-bottom px-3 px-md-5">
             <a className="navbar-brand" href="#">
                 <img src={logo} alt="Logo" style={logoStyle} />
             </a>
@@ -48,7 +52,7 @@ function NavBar() {
             </button>
 
             <div className="collapse navbar-collapse" id="navbarNav">
-                <div className={`d-flex ${windowWidth < 768 ? 'flex-column align-items-end' : 'flex-md-row ms-auto'}`}> 
+                <div className={`d-flex ${windowWidth < 768 ? 'flex-column align-items-end' : 'flex-md-row ms-auto'}`}>
                     <a className="nav-link text-white my-2 me-4" href="#projects">Proyectos</a>
                     <a className="nav-link text-white my-2 me-4" href="#experience">Experiencia</a>
                     <a className="nav-link text-white my-2 me-4" href="#contact">Contacto</a>
@@ -57,7 +61,9 @@ function NavBar() {
                         <Within
                             color="white"
                             duration={1500}
-                            placeholder={undefined}
+                            toggled={theme === 'dark'} 
+                            onToggle={() => setTheme(theme === 'dark' ? 'light' : 'dark')} 
+                            placeholder={undefined} 
                             onPointerEnterCapture={undefined}
                             onPointerLeaveCapture={undefined}
                         />

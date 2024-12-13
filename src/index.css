@@ -1,16 +1,63 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --background-dark: linear-gradient(#1f0134, #3f0023);
+  --background-light: linear-gradient(#010634, #00183f);
+  --text-dark: #f1f1f1;
+  --text-light: #000000;
+  --primary-color-dark: #FF6F00;
+  --primary-color-light: #FF9100;
 }
 
-body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
+body[data-theme="dark"] {
+  background: var(--background-dark);
+  color: var(--text-dark);
+}
+
+body[data-theme="light"] {
+  background: var(--background-light);
+  color: var(--text-light);
+}
+
+.navbar[data-theme="dark"] {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar[data-theme="light"] {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+::view-transition-group(root) {
+  animation-duration: 0.7s;
+  animation-timing-function: var(--expo-out);
+}
+
+::view-transition-new(root) {
+  animation-name: reveal-light;
+}
+
+::view-transition-old(root),
+.dark::view-transition-old(root) {
+  animation: none;
+  z-index: -1;
+}
+
+.dark::view-transition-new(root) {
+  animation-name: reveal-dark;
+}
+
+@keyframes reveal-dark {
+  from {
+    clip-path: polygon(50% -71%, -50% 71%, -50% 71%, 50% -71%);
+  }
+  to {
+    clip-path: polygon(50% -71%, -50% 71%, 50% 171%, 171% 50%);
+  }
+}
+
+@keyframes reveal-light {
+  from {
+    clip-path: polygon(171% 50%, 50% 171%, 50% 171%, 171% 50%);
+  }
+  to {
+    clip-path: polygon(171% 50%, 50% 171%, -50% 71%, 50% -71%);
+  }
 }

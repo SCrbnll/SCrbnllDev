@@ -15,7 +15,7 @@ const Projects: React.FC = () => {
   return (
     <div className="container text-white py-5" id="projects">
       <h2 className="mx-3 mx-md-0 my-5">Proyectos</h2>
-      <div className="row">
+      <div className="row mx-3 mx-md-0">
         {projectsData.map((project: Project, index: number) => (
           <ProjectItem
             key={index}
