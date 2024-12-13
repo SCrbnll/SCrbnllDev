@@ -2,10 +2,10 @@
     {
       "title": "RoadBeat",
       "technologies": ["Expo", "JavaScript", "Java", "Spring Framework", "Hibernate", "Node.js"],
-      "description": "Proximamente...",
-      "githubUrl": "",
-      "imgUrl": "",
-      "previewUrl": ""
+      "description": "RoadBeat es mi Trabajo de Fin de Grado (TFG) del ciclo superior de Desarrollo de Aplicaciones Multiplataforma. Esta app móvil mejora los viajes compartidos sincronizando música en tiempo real mediante salas de reproducción. Desarrollada en React Native para explorar tecnologías multiplataforma y aprender sobre React y sockets, también integra un backend con Spring Boot y servicios como Spotify API.",
+      "githubUrl": "https://github.com/SCrbnll/RoadBeat",
+      "imgUrl": "https://raw.githubusercontent.com/SCrbnll/RoadBeat/refs/heads/main/roadbeat.png",
+      "previewUrl": "https://youtu.be/ZsJt--pIcPU"
     },
     {
       "title": "Porfolio",
@@ -26,10 +26,10 @@
     {
       "title": "Knight Fate",
       "technologies": ["Unity", "C#"],
-      "description": "Knight Fate: un juego de aventuras Pixelart en Unity. Embárcate en la épica travesía de un caballero atrapado en una mazmorra. Supera desafíos, resuelve enigmas y derrota enemigos para encontrar la salida y asegurar tu libertad. ¿Tienes lo necesario para forjar tu destino como un verdadero héroe?",
+      "description": "Knight Fate es un juego de plataformas 2D desarrollado como proyecto grupal en Unity. En esta aventura, encarnas a un caballero atrapado en una mazmorra llena de retos y enemigos únicos. Fue diseñado para aprender y aplicar habilidades en diseño de niveles, mecánicas y programación en un entorno colaborativo.",
       "githubUrl": "https://github.com/SCrbnll/KnightFate/",
       "previewUrl": "https://youtu.be/rqjld6bgV-k",
-      "imgUrl": "https://raw.githubusercontent.com/SCrbnll/KnightFate/main/knight_fate.png"
+      "imgUrl": "https://raw.githubusercontent.com/SCrbnll/KnightFate/refs/heads/main/knight_fate_new.png"
     }
   ]
   
