@@ -1,0 +1,108 @@
+[
+    {
+        "category": "Lenguajes",
+        "skills": [
+            {
+                "name": "Java",
+                "icon": "./icons/java-color.svg"
+            },
+            {
+                "name": "JavaScript",
+                "icon": "./icons/javascript-color.svg"
+            },
+            {
+                "name": "TypeScript",
+                "icon": "./icons/typescript-color.svg"
+            },
+            {
+                "name": "PHP",
+                "icon": "./icons/php-color.svg"
+            }
+        ]
+    },
+    {
+        "category": "Frontend",
+        "skills": [
+            {
+                "name": "React",
+                "icon": "./icons/react-color.svg"
+            },
+            {
+                "name": "Vue.js",
+                "icon": "./icons/vuedotjs-color.svg"
+            },
+            {
+                "name": "Angular",
+                "icon": "./icons/angular-color.svg"
+            },
+            {
+                "name": "Bootstrap",
+                "icon": "./icons/bootstrap-color.svg"
+            }
+        ]
+    },
+    {
+        "category": "Backend",
+        "skills": [
+            {
+                "name": "Spring Framework",
+                "icon": "./icons/spring-color.svg"
+            },
+            {
+                "name": "Laravel",
+                "icon": "./icons/laravel-color.svg"
+            },
+            {
+                "name": "Node.js",
+                "icon": "./icons/nodedotjs-color.svg"
+            }
+        ]
+    },
+    {
+        "category": "Database",
+        "skills": [
+            {
+                "name": "MySQL",
+                "icon": "./icons/mysql-color.svg"
+            },
+            {
+                "name": "PostgreSQL",
+                "icon": "./icons/postgresql-color.svg"
+            }
+        ]
+    },
+    {
+        "category": "DevOps",
+        "skills": [
+            {
+                "name": "AWS",
+                "icon": "./icons/amazonwebservices-color.svg"
+            },
+            {
+                "name": "Azure",
+                "icon": "./icons/azure-color.svg"
+            },
+            {
+                "name": "Apache",
+                "icon": "./icons/apache-color.svg"
+            },
+            {
+                "name": "Nginx",
+                "icon": "./icons/nginx-color.svg"
+            }
+        ]
+    },
+    {
+        "category": "Mobile Development",
+        "skills": [
+            {
+                "name": "Expo",
+                "icon": "./icons/expo-color.svg"
+            },
+            {
+                "name": "Flutter",
+                "icon": "./icons/flutter-color.svg"
+            }
+        ]
+    }
+]

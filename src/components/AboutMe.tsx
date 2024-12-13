@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import mySelf from '/images/myself.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function AboutMe() {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -35,6 +37,34 @@ function AboutMe() {
                             Siempre en busca de aprender y enfrentar nuevos retos, me entusiasma seguir creciendo
                             profesionalmente y contribuir al éxito de un equipo.
                         </p>    
+                        <div className="d-flex justify-content-start mt-4">
+                            <a
+                                href="https://linkedin.com/in/samuu-crbnll"
+                                target="_blank"
+                                className="btn btn-outline-light rounded-circle me-3"
+                                style={{ width: '45px', height: '42px', border: '2px solid white' }}
+                            >
+                                <FontAwesomeIcon icon={faLinkedin} size="lg" />
+                            </a>
+
+                            <a
+                                href="https://github.com/SCrbnll"
+                                target="_blank"
+                                className="btn btn-outline-light rounded-circle me-3"
+                                style={{ width: '45px', height: '42px', border: '2px solid white' }}
+                            >
+                                <FontAwesomeIcon icon={faGithub} size="lg" />
+                            </a>
+
+                            <a
+                                href="/path/to/your/cv.pdf" 
+                                target="_blank"
+                                className="btn btn-outline-light rounded-circle"
+                                style={{ width: '45px', height: '42px', border: '2px solid white', textAlign: 'center' }}
+                            >
+                                <b>CV</b>
+                            </a>
+                        </div>
                     </div>
                     <div className="col-md-4 col-12 text-center">
                         <img src={mySelf} alt="About Me" className="img-fluid" style={mySelfStyle} />
