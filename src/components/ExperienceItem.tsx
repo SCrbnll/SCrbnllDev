@@ -4,7 +4,8 @@ interface ExperienceItemProps {
   job: string;
   company: string;
   date: string;
-  description: string;}
+  description: string;
+}
 
 const ExperienceItem: React.FC<ExperienceItemProps> = ({
   job,
@@ -30,26 +31,29 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
         style={{ cursor: 'pointer' }}
         onClick={handleToggle}
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 512"
-          width="20"
-          height="20"
+        <span
+          className={`material-icons`}
           style={{
-            fill: '#ffffff',
+            fontSize: '30px',
+            transition: 'transform 0.3s ease-in-out',
+            transform: isOpen ? 'rotate(360deg)' : 'rotate(270deg)',
           }}
         >
-          <path d="M176 56l0 40 160 0 0-40c0-4.4-3.6-8-8-8L184 48c-4.4 0-8 3.6-8 8zM128 96l0-40c0-30.9 25.1-56 56-56L328 0c30.9 0 56 25.1 56 56l0 40 0 32 0 352-256 0 0-352 0-32zM64 96l32 0 0 384-32 0c-35.3 0-64-28.7-64-64L0 160c0-35.3 28.7-64 64-64zM448 480l-32 0 0-384 32 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64z"/>
-        </svg>
+          arrow_drop_down_circle
+        </span>
       </div>
 
       <div className="ms-5">
-        <h3 className=" h5 text-warning">{job}</h3>
+        <h3 className="h5 text-warning">{job}</h3>
         <h4 className="h6 text-white">{date}</h4>
 
         <div className={`collapse ${isOpen ? 'show' : ''}`}>
-        <time className="text-white d-block mb-2" style={{ fontSize: '14px' }}><b>{company}</b></time>
-          <p className="text-light" style={{ textWrap: 'balance'}}>{description}</p>
+          <time className="text-white d-block mb-2" style={{ fontSize: '14px' }}>
+            <b>{company}</b>
+          </time>
+          <p className="text-light" style={{ textWrap: 'balance' }}>
+            {description}
+          </p>
         </div>
       </div>
     </li>

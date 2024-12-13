@@ -25,7 +25,7 @@ function AboutMe() {
     return (
         <>
             <div className="container text-white" style={containerStyle}>
-                <div className="row mx-3 mx-md-0 my-4">
+                <div className="row mx-3 mx-md-0">
                     <div className="col-md-8 col-12 my-auto">
                         <h2 style={{ color: '#fcdac0' }}>Samuel Carbonell Gonçalves</h2>
                         <h4 style={{ color: '#FF9100', textShadow: '5px 5px 10px rgba(0, 0, 0, 0.1)' }}>
@@ -62,7 +62,9 @@ function AboutMe() {
                                 className="btn btn-outline-light rounded-circle"
                                 style={{ width: '45px', height: '42px', border: '2px solid white', textAlign: 'center' }}
                             >
-                                <b>CV</b>
+                                <span className="material-icons" style={{ fontSize: '22px', marginInline: 'auto' }}>
+                                    description
+                                </span>
                             </a>
                         </div>
                     </div>

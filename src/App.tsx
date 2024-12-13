@@ -1,4 +1,5 @@
 import AboutMe from "./components/AboutMe"
+import Contact from "./components/Contact"
 import Experience from "./components/Experience"
 import NavBar from "./components/NavBar"
 import Projects from "./components/Project"
@@ -13,7 +14,7 @@ function App() {
         <Skills />
         <Projects />
         <Experience />
-        <p>Este es el inicio de mi nuevo Porfolio</p>
+        <Contact />
       </div>
     </>
   )
