@@ -1,28 +1,30 @@
 :root {
   --background-dark: linear-gradient(#1f0134, #3f0023);
-  --background-light: linear-gradient(#0900bb, #3f3200);
   --text-dark: #f1f1f1;
+  --h2-color-dark: #fcdac0;
+  --h4-color-dark: #FF9100;
+  --p-color-dark: #fab682;
+  --modal-content-background-color-dark: #000000;
+  --modal-content-color-dark: #ffffff;
+
+
+  --background-light: linear-gradient(#0900bb, #3f3200);
   --text-light: #000000;
-  --primary-color-dark: #FF6F00;
   --primary-color-light: #FF9100;
 }
 
 body[data-theme="dark"] {
   background: var(--background-dark);
   color: var(--text-dark);
+  h2{color: var(--h2-color-dark);}
+  h4{color: var(--h4-color-dark);}
+  p{color: var(--p-color-dark);}
+  .modal-content{background-color: var(--modal-content-background-color-dark); color: var(--modal-content-color-dark); p {color: var(--modal-content-color-dark);}};
 }
 
 body[data-theme="light"] {
   background: var(--background-light);
   color: var(--text-light);
-}
-
-.navbar[data-theme="dark"] {
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.navbar[data-theme="light"] {
-  background-color: rgba(255, 255, 255, 0.9);
 }
 
 ::view-transition-group(root) {

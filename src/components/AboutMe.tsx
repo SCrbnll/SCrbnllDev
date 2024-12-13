@@ -19,7 +19,7 @@ function AboutMe() {
     const mySelfStyle = {
         maxWidth: windowWidth >= 1024  ? '400px' : windowWidth >= 768 ? '200px' : '170px', 
         borderRadius: '50%',
-        border: '5px solid #FF6F00',
+        border: '5px solid',
     };
 
     return (
@@ -27,12 +27,12 @@ function AboutMe() {
             <div className="container text-white" style={containerStyle}>
                 <div className="row mx-3 mx-md-0">
                     <div className="col-lg-8 col-md-8 col-12 my-auto">
-                        <h2 style={{ color: '#fcdac0' }}>Samuel Carbonell Gonçalves</h2>
-                        <h4 style={{ color: '#FF9100', textShadow: '5px 5px 10px rgba(0, 0, 0, 0.1)' }}>
+                        <h2>Samuel Carbonell Gonçalves</h2>
+                        <h4 style={{ textShadow: '5px 5px 10px rgba(0, 0, 0, 0.1)' }}>
                             Desarrollador Junior | Front & Back Developer
                         </h4>
                         <br />
-                        <p style={{ color: '#fab682', textWrap: 'balance' }}>
+                        <p style={{ textWrap: 'balance' }}>
                             ¡Hola! Soy <b>Samuel Carbonell</b>, un apasionado del desarrollo de software y la programación.
                             Siempre en busca de aprender y enfrentar nuevos retos, me entusiasma seguir creciendo
                             profesionalmente y contribuir al éxito de un equipo.
