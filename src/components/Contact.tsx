@@ -19,14 +19,17 @@ function Contact() {
 
   return (
     <div id="contact" className="container text-white mt-5">
-      <div className="d-flex justify-content-center align-items-center">
-        <div className="email-box p-3 mb-3 border rounded" style={{ width: '400px', backgroundColor: '#333' }}>
-          <p className="text-center mb-0" style={{ fontSize: '18px' }}>
-            {emailCopied ? '¡Correo copiado!' : email}
-          </p>
+      <div className="row justify-content-center align-items-center">
+        
+        <div className="col-10 col-md-6 text-center mb-3">
+          <div className="email-box p-3 border rounded" style={{ backgroundColor: '#333' }}>
+            <p className="text-center mb-0" style={{ fontSize: '18px' }}>
+              {emailCopied ? '¡Correo copiado!' : email}
+            </p>
+          </div>
         </div>
 
-        <div className="p-3 mb-3 d-flex justify-content-center align-items-center">
+        <div className="col-12 col-md-auto d-flex justify-content-center align-items-center">
           <button 
             className="btn btn-outline-light rounded-circle me-3" 
             style={{ width: '45px', height: '45px', border: '2px solid white' }}

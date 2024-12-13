@@ -17,7 +17,7 @@ function AboutMe() {
     };
 
     const mySelfStyle = {
-        maxWidth: windowWidth >= 768 ? '400px' : '200px',
+        maxWidth: windowWidth >= 1024  ? '400px' : windowWidth >= 768 ? '200px' : '170px', 
         borderRadius: '50%',
         border: '5px solid #FF6F00',
     };
@@ -26,7 +26,7 @@ function AboutMe() {
         <>
             <div className="container text-white" style={containerStyle}>
                 <div className="row mx-3 mx-md-0">
-                    <div className="col-md-8 col-12 my-auto">
+                    <div className="col-lg-8 col-md-8 col-12 my-auto">
                         <h2 style={{ color: '#fcdac0' }}>Samuel Carbonell Gonçalves</h2>
                         <h4 style={{ color: '#FF9100', textShadow: '5px 5px 10px rgba(0, 0, 0, 0.1)' }}>
                             Desarrollador Junior | Front & Back Developer
@@ -68,7 +68,7 @@ function AboutMe() {
                             </a>
                         </div>
                     </div>
-                    <div className="col-md-4 col-12 text-center">
+                    <div className="col-md-4 col-12 text-center my-4 my-md-auto">
                         <img src={mySelf} alt="About Me" className="img-fluid" style={mySelfStyle} />
                     </div>
                 </div>
