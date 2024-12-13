@@ -1,0 +1,123 @@
+[
+    {
+      "name": "Java",
+      "icon": "openjdk",
+      "color": "ED8B00"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "javascript",
+      "color": "F7DF1E"
+    },
+    {
+      "name": "TypeScript",
+      "icon": "typeScript",
+      "color": "3178C6"
+    },
+    {
+      "name": "PHP",
+      "icon": "php",
+      "color": "777BB4"
+    },
+    {
+      "name": "C#",
+      "icon": "sharp",
+      "color": "556472"
+    },
+    {
+      "name": "React",
+      "icon": "react",
+      "color": "61DAFB"
+    },
+    {
+      "name": "Vue.js",
+      "icon": "vue.js",
+      "color": "4FC08D"
+    },
+    {
+      "name": "Angular",
+      "icon": "angular",
+      "color": "DD0031"
+    },
+    {
+      "name": "Tailwind CSS",
+      "icon": "tailwind css",
+      "color": "38B2AC"
+    },
+    {
+      "name": "Bootstrap",
+      "icon": "bootstrap",
+      "color": "7952B3"
+    },
+    {
+      "name": "Spring Framework",
+      "icon": "spring",
+      "color": "007958"
+    },
+    {
+      "name": "Hibernate",
+      "icon": "hibernate",
+      "color": "5A5539"
+    },
+    {
+      "name": "Laravel",
+      "icon": "laravel",
+      "color": "FF2D20"
+    },
+    {
+      "name": "Node.js",
+      "icon": "node.js",
+      "color": "43853D"
+    },
+    {
+      "name": "MySQL",
+      "icon": "mysql",
+      "color": "00000F"
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "postgresql",
+      "color": "316192"
+    },
+    {
+      "name": "AWS",
+      "icon": "amazonwebservices",
+      "color": "232F3E"
+    },
+    {
+      "name": "Azure",
+      "icon": "microsoft-azure",
+      "color": "07405E"
+    },
+    {
+      "name": "Apache",
+      "icon": "apache",
+      "color": "800080"
+    },
+    {
+      "name": "Nginx",
+      "icon": "nginx",
+      "color": "009639"
+    },
+    {
+      "name": "React Native",
+      "icon": "react",
+      "color": "61DAFB"
+    },
+    {
+      "name": "Expo",
+      "icon": "expo",
+      "color": "1B1F23"
+    },
+    {
+      "name": "Flutter",
+      "icon": "flutter",
+      "color": "0553B1"
+    },
+    {
+        "name": "Unity",
+        "icon": "unity",
+        "color": "000000"
+    }
+  ]
+  
