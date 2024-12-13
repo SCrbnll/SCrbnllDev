@@ -29,7 +29,10 @@ function NavBar() {
     };
 
     return (
-        <nav className="navbar navbar-expand-md fixed-top border-bottom px-3 px-md-5">
+        <nav className="navbar navbar-expand-md fixed-top border-bottom px-3 px-md-5" style={{
+            backgroundColor: 'rgba(0, 0, 0, 0.9)', 
+            backdropFilter: 'blur(20px)', 
+            WebkitBackdropFilter: 'blur(20px)'}}>
             <a className="navbar-brand" href="#">
                 <img src={logo} alt="Logo" style={logoStyle} />
             </a>
