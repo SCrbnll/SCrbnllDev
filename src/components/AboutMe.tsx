@@ -57,7 +57,7 @@ function AboutMe() {
                             </a>
 
                             <a
-                                href="/path/to/your/cv.pdf" 
+                                href="/Curriculum Vitae.pdf" 
                                 target="_blank"
                                 className="btn btn-outline-light rounded-circle"
                                 style={{ width: '45px', height: '42px', border: '2px solid white', textAlign: 'center' }}
