@@ -44,11 +44,11 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
       </div>
 
       <div className="ms-5">
-        <h3 className="h5 text-warning">{job}</h3>
+        <h3 className="h5">{job}</h3>
         <h4 className="h6 text-white">{date}</h4>
 
         <div className={`collapse ${isOpen ? 'show' : ''}`}>
-          <time className="text-white d-block mb-2" style={{ fontSize: '14px' }}>
+          <time className="d-block mb-2" style={{ fontSize: '14px' }}>
             <b>{company}</b>
           </time>
           <p className="text-light" style={{ textWrap: 'balance' }}>
