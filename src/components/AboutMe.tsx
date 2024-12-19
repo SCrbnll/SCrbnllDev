@@ -12,6 +12,11 @@ function AboutMe() {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    const handleOpenPDF = () => {
+        const pdfUrl = `/SCrbnllDev/Curriculum Vitae.pdf`;
+        window.open(pdfUrl, '_blank');
+    };
+
     const containerStyle = {
         marginTop: windowWidth >= 768 ? '120px' : '80px',
     };
@@ -56,16 +61,15 @@ function AboutMe() {
                                 <FontAwesomeIcon icon={faGithub} size="lg" />
                             </a>
 
-                            <a
-                                href="/Curriculum Vitae.pdf" 
-                                target="_blank"
+                            <button
+                                onClick={handleOpenPDF}
                                 className="btn btn-outline-light rounded-circle"
                                 style={{ width: '45px', height: '42px', border: '2px solid white', textAlign: 'center' }}
                             >
                                 <span className="material-icons" style={{ fontSize: '22px', marginInline: 'auto' }}>
                                     description
                                 </span>
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <div className="col-md-4 col-12 text-center my-4 my-md-auto">
